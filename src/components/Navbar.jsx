@@ -19,10 +19,12 @@ const Navbar = () => {
   return (
     <div className="absolute top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-7 lg:px-11 bg-transparent">
-        <h1 className="font-semibold text-blue-800">
-          Pro Dynamic Cargo <br />
-          Logistics Corporation
-        </h1>
+        <a href="/">
+          <h1 className="font-semibold text-blue-800">
+            Pro Dynamic Cargo <br />
+            Logistics Corporation
+          </h1>
+        </a>
         <ul className="hidden md:flex gap-7 text-blue-700 font-semibold">
           <a href="#About" className="cursor-pointer hover:text-gray-400">
             About Us
@@ -30,8 +32,8 @@ const Navbar = () => {
           <a href="#Services" className="cursor-pointer hover:text-gray-400">
             Services
           </a>
-          <a href="#Clients" className="cursor-pointer hover:text-gray-400">
-            Our Clients
+          <a href="/Gallery" className="cursor-pointer hover:text-gray-400">
+            Gallery
           </a>
           <a href="#Header" className="cursor-pointer hover:text-gray-400">
             Contact Us
@@ -88,10 +90,10 @@ const Navbar = () => {
           </a>
           <a
             onClick={() => setShowMobileMenu(false)}
-            href="#Clients"
+            href="/Gallery"
             className="px-4 py-2 rounded-full inline-block"
           >
-            Our Clients
+            Gallery
           </a>
           <a
             onClick={() => setShowMobileMenu(false)}

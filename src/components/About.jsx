@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center container mx-auto px-14 md:px-20 lg:px-32 w-full overflow-hidden"
+      className="flex flex-col items-center justify-center container mx-auto px-14 md:px-20 lg:px-32 w-full overflow-hidden mt-24"
       id="About"
     >
       <h1 className="text-2xl sm:text-4xl font-semibold mb-8 lg:mb-32 text-blue-600">

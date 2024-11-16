@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -8,23 +8,33 @@ import OtherServices from "./components/OtherService";
 import Questions from "./components/Questions";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Gallery from "./Pages/Gallery";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
+    <Router>
       <div className="w-full overflow-hidden">
-        <Header />
-        <About />
-        <Services />
-        <OtherServices />
-        <Clients />
-        <Questions />
-        <Contact />
-        <Footer />
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <About />
+                <Services />
+                <OtherServices />
+                <Clients />
+                <Questions />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/gallery" element={<Gallery />} />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 
