@@ -17,13 +17,10 @@ const Navbar = () => {
   }, [showMobileMenu]);
 
   return (
-    <div className="absolute top-0 left-0 w-full z-10">
+    <div className="fixed top-0 left-0 w-full z-10 bg-slate-200">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-7 lg:px-11 bg-transparent">
         <a href="/">
-          <h1 className="font-semibold text-blue-800">
-            Pro Dynamic Cargo <br />
-            Logistics Corporation
-          </h1>
+          <h1 className="font-semibold text-blue-800">Pro Dynamic Cargo</h1>
         </a>
         <ul className="hidden md:flex gap-7 text-blue-700 font-semibold">
           <a href="#About" className="cursor-pointer hover:text-gray-400">

@@ -83,29 +83,57 @@ const Contact = () => {
       <div className="lg:w-1/2">
         <form ref={form} onSubmit={sendEmail} className="space-y-5">
           <div>
-            <label className="block text-lg font-medium">Your Name</label>
+            <label className="block text-lg font-medium"></label>
             <input
               type="text"
               name="user_name"
-              placeholder="Enter your name"
+              placeholder="Your name*"
               required
               className="w-full p-4 bg-indigo-100 mt-2 rounded-lg outline-none"
             />
           </div>
           <div>
-            <label className="block text-lg font-medium">Your Email</label>
+            <label className="block text-lg font-medium"></label>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Company Name*"
+              required
+              className="w-full p-4 bg-indigo-100 mt-2 rounded-lg outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-lg font-medium"></label>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Address*"
+              required
+              className="w-full p-4 bg-indigo-100 mt-2 rounded-lg outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-lg font-medium"></label>
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Tel/Cell Number*"
+              required
+              className="w-full p-4 bg-indigo-100 mt-2 rounded-lg outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-lg font-medium"></label>
             <input
               type="email"
               name="user_email"
-              placeholder="example@email.com"
+              placeholder="Email address*"
               required
               className="w-full p-4 bg-indigo-100 mt-2 rounded-lg outline-none"
             />
           </div>
           <div>
-            <label className="block text-lg font-medium">
-              Your Message here
-            </label>
+            <label className="block text-lg font-medium"></label>
             <textarea
               name="message"
               rows="6"

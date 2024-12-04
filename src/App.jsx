@@ -9,12 +9,14 @@ import Questions from "./components/Questions";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Gallery from "./Pages/Gallery";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
     <Router>
       <div className="w-full overflow-hidden">
         <Navbar />
+        <WhatsAppButton />
         <Routes>
           <Route
             path="/"
@@ -24,7 +26,7 @@ function App() {
                 <About />
                 <Services />
                 <OtherServices />
-                <Clients />
+
                 <Questions />
                 <Contact />
                 <Footer />

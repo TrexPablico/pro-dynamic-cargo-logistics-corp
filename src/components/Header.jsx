@@ -11,8 +11,12 @@ const Header = () => {
     >
       <Navbar />
       <div className="container flex flex-col items-center justify-center mx-auto py-4 px-6 md:px-20 lg:px-32 text-white mt-[-150px] text-center">
-        <img src={cargo} alt="" className="h-[150px] lg:h-[250px] w-[650px]" />
-        <div className="space-x-6 mt-16">
+        <img
+          src={cargo}
+          alt=""
+          className="h-[150px] lg:h-[400px] lg:w-[950px] w-[650px] object-cover"
+        />
+        <div className="space-x-6 mt-6">
           <a
             href="#Services"
             className="border bg-blue-700 border-white hover:bg-blue-400 px-8 py-3 rounded"
